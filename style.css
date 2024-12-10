@@ -44,12 +44,11 @@ ul[role="list"] {
   --light-color: #fff;
   --cta-color: red;
   --font-size-xl: 3rem;
-  --margin-corner-left: 1rem 0 1rem 0;
-  --margin-corner-right: 1rem 1rem 0 0;
+  --margin-corner-left: 1rem 0 0 1rem;
+  /* --margin-corner-right: 1rem 1rem 0 0; */
 }
 
 body {
-  height: 100vh;
   width: 100vw;
   background-color: var(--primary-color);
   color: var(--light-color);
@@ -57,6 +56,7 @@ body {
 
 header {
   min-height: 25rem;
+  width: 100vw;
   background-color: var(--accent-color);
   color: var(--primary-color);
   display: flex;
@@ -71,5 +71,44 @@ header {
   nav > img {
     margin: var(--margin-corner-left);
     background-color: aqua;
+  }
+}
+
+/* Ramen för både produkter och tjänsterna */
+main {
+  border: 3px solid red;
+  width: min(80vw, 100vw);
+  margin: auto;
+}
+
+/* Ramen för produkterna */
+section > .productlist {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.product-card {
+  border: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: calc(78vw / 3);
+  gap: 1rem;
+  overflow: hidden;
+
+  /* CSS just for the text box, not the img*/
+  > * + * {
+    padding-inline: 1rem;
+  }
+
+  #cta-btn {
+    background-color: var(--cta-color);
+    color: var(--light-color);
+    width: 10rem;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
   }
 }
