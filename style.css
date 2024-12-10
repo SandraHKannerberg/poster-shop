@@ -1,0 +1,26 @@
+/*CSS RESET*/
+/* remove default spacing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove list styles on ul*/
+ul[role="list"] {
+  list-style: none;
+}
