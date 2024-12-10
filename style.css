@@ -24,3 +24,52 @@ video {
 ul[role="list"] {
   list-style: none;
 }
+
+:root {
+  /* 
+  padding sidor
+  padding top/botten
+  margin sidor
+  margin top/botten
+  font-size h1
+  font-size h2
+  font-size h3
+  font-size text
+  meny-länkar
+  */
+
+  --primary-color: #000000;
+  --secondary-color: rgb(58, 57, 57);
+  --accent-color: #3de07e;
+  --light-color: #fff;
+  --cta-color: red;
+  --font-size-xl: 3rem;
+  --margin-corner-left: 1rem 0 1rem 0;
+  --margin-corner-right: 1rem 1rem 0 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+header {
+  min-height: 25rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  nav > img {
+    margin: var(--margin-corner-left);
+    background-color: aqua;
+  }
+}
