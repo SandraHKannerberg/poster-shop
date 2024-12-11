@@ -116,20 +116,16 @@ main {
 footer {
   grid-area: footer;
   background-color: var(--secondary-color);
+  padding: var(--large-space);
+  line-height: var(--line-height-large);
 }
 
-.container {
+.content-container {
   max-width: 65vw;
   margin-inline: auto;
 }
 
 /* COMPONENTS */
-
-.productlist {
-  max-width: 65vw;
-  margin-inline: auto;
-}
-
 .product-card {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -177,10 +173,17 @@ footer {
   gap: 3rem;
 }
 
+.grid-column-3-auto {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+}
+
 .grid-column-4 {
   display: grid;
-  grid-template-columns: repeat(4, 50px);
-  justify-content: start;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 /* Space */
@@ -200,4 +203,30 @@ footer {
 
 .text-dark {
   color: var(--primary-color);
+}
+
+/* TYP */
+.fs-normal {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.5;
+  color: var(--light-color);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: 1.5rem;
+  /* margin-bottom: var(--small-space); */
 }

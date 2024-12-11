@@ -34,7 +34,7 @@
     <!-- Container for both products and services -->
     <main>
       <!-- Container for products -->
-      <ul class="productlist grid-column-3" role="list">
+      <ul class="content-container productlist grid-column-3" role="list">
         <li class="product-card">
           <img
             src="/assets/austronaut.png"
@@ -126,7 +126,7 @@
         </li>
       </ul>
       <!-- Container for services -->
-      <ul class="productlist services grid-column-2 mt-5" role="list">
+      <ul class="content-container productlist services grid-column-2 mt-5" role="list">
         <li class="product-card service bg-light text-dark">
             <img
               src="/assets/photographer.png"
@@ -156,7 +156,8 @@
         </li>
       </ul>
     </main>
-    <footer class="grid-column-3">
+    <footer>
+      <div class="content-container grid-column-3-auto">
         <nav class="footer-menu">
           <h3>Nav</h3>
           <ul role="list">
@@ -165,7 +166,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <address class="footer-address">
+        <address class="footer-address fs-normal">
           <h3>Adress</h3>
           <p>Adressen 123</p>
           <p>12345 Staden</p>
@@ -179,6 +180,7 @@
             <img src="/assets/logo-instagram.svg" alt="Instagram logotype" />
           </div>
         </article>
+      </div>
     </footer>
   </div>
   </body>
