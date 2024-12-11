@@ -11,6 +11,7 @@
     <title>Poster Shop -- Grid</title>
   </head>
   <body>
+    <div class="grid-container">
     <header>
       <nav>
         <img src="/assets/navicon.svg" alt="Icon for menu" />
@@ -33,7 +34,7 @@
     <!-- Container for both products and services -->
     <main>
       <!-- Container for products -->
-      <ul class="productlist" role="list">
+      <ul class="productlist grid-column-3" role="list">
         <li class="product-card">
           <img
             src="/assets/austronaut.png"
@@ -125,7 +126,7 @@
         </li>
       </ul>
       <!-- Container for services -->
-      <ul class="productlist services" role="list">
+      <ul class="productlist services grid-column-2 mt-5" role="list">
         <li class="product-card service">
             <img
               src="/assets/photographer.png"
@@ -155,7 +156,7 @@
         </li>
       </ul>
     </main>
-    <footer>
+    <footer class="grid-column-3">
         <nav class="footer-menu">
           <h3>Nav</h3>
           <ul role="list">
@@ -164,18 +165,21 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <article class="footer-info">
+        <address class="footer-address">
           <h3>Adress</h3>
-          <address>Adressen 123</address>
-          <address>12345 Staden</address>
-        </article>
-        <article class="footer-info">
+          <p>Adressen 123</p>
+          <p>12345 Staden</p>
+        </address>
+        <article class="footer-icons">
           <h3>Sociala medier</h3>
-          <img src="/assets/logo-twitter.svg" alt="Twitter logotype" />
-          <img src="/assets/logo-facebook.svg" alt="Facebook logotype" />
-          <img src="/assets/logo-linkedin.svg" alt="Linkedin logotype" />
-          <img src="/assets/logo-instagram.svg" alt="Instagram logotype" />
+          <div class="grid-column-4">
+            <img src="/assets/logo-twitter.svg" alt="Twitter logotype" />
+            <img src="/assets/logo-facebook.svg" alt="Facebook logotype" />
+            <img src="/assets/logo-linkedin.svg" alt="Linkedin logotype" />
+            <img src="/assets/logo-instagram.svg" alt="Instagram logotype" />
+          </div>
         </article>
     </footer>
+  </div>
   </body>
 </html>
