@@ -34,7 +34,7 @@ ul[role="list"] {
 
   /* Font */
   --font-size-xl: 4rem;
-  --line-height: 1.5;
+  --line-height: 1.6;
   --line-height-large: 2;
   --font-family: "Roboto", sans-serif;
   --font-style: normal;
@@ -114,9 +114,13 @@ main {
 }
 
 footer {
-  background-color: var(--secondary-color);
   grid-area: footer;
-  padding-inline: auto;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 65vw;
+  margin-inline: auto;
 }
 
 /* COMPONENTS */
@@ -126,20 +130,51 @@ footer {
   margin-inline: auto;
 }
 
-/* STYLE */
+.product-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.product-card.service {
+  gap: 2rem;
+
+  > * + * {
+    padding-inline: var(--small-space);
+  }
+
+  .cta-btn {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.cta-btn {
+  background-color: var(--cta-color);
+  color: var(--light-color);
+  width: fit-content;
+  padding: var(--btn-p-small);
+  border: none;
+  border-radius: var(--btn-border-radius);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-btn);
+}
+
+/* LAYOUT */
 /* Grid */
 .grid-column-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .grid-column-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .grid-column-4 {
@@ -153,13 +188,16 @@ footer {
   margin-top: 5rem;
 }
 
-.container {
-  max-width: 65vw;
-  margin-inline: auto;
+.gap-inline {
+  gap: 1rem;
 }
 
-.footer-menu,
-.footer-address,
-.footer-icons {
-  background-color: aqua;
+/* COLORS  */
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+.text-dark {
+  color: var(--primary-color);
 }
