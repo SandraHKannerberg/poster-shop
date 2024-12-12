@@ -75,24 +75,12 @@ body {
   font-weight: var(--font-weight-base);
 }
 
-/* .grid-container {
+.grid-container {
   display: grid;
   grid-template-areas:
     "header header header header"
     "main main main main"
     "footer footer footer footer";
-  grid-template-rows: 25rem 1fr 15rem;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
-  min-height: 100vh;
-} */
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header"
-    "main main main main main"
-    "footer footer footer footer footer";
   grid-template-rows: 25rem 1fr 15rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
@@ -263,18 +251,8 @@ table.pricing-info-table {
   align-items: center;
 }
 
-.justify-content-end {
-  justify-content: end;
-}
-
-.align-items-end {
-  align-items: end;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.justify-self-end {
+  justify-self: end;
 }
 
 /* SPACE */
