@@ -103,6 +103,11 @@ footer {
   margin-inline: auto;
 }
 
+.content-wrapper-small {
+  max-width: 55vw;
+  margin-inline: auto;
+}
+
 /* COMPONENTS */
 header > nav > .cart-count > .shoppingcart-icon {
   position: relative;
