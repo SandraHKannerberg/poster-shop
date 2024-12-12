@@ -16,18 +16,18 @@
         <nav
           class="grid-column-2-auto align-items-center justify-content-space-between margin-inline-auto"
         >
-          <img src="/assets/navicon.svg" alt="Icon for menu" />
-
-          <!-- <a class="cart-count" href="/grid-version/checkout.html">
-              <img
-                class="shoppingcart-icon"
-                src="/assets/shoppingcart-icon.svg"
-                alt="Icon for shoppingcart"
-              />
-              <aside class="badge">2</aside>
-          </a> -->
+          <a href="/grid-version/index.html">
+            <img src="/assets/navicon.svg" alt="Icon for menu" />
+          </a>
+          <a class="cart-count" href="/grid-version/checkout.html">
+            <img
+              class="shoppingcart-icon"
+              src="/assets/shoppingcart-icon.svg"
+              alt="Icon for shoppingcart"
+            />
+          </a>
         </nav>
-        <h1 class="text-center text-xlarge text-bold">Poster Shop</h1>
+        <h1 class="text-center text-xlarge text-bold">Checkout</h1>
         <img
           class="logotype margin-inline-auto"
           src="/assets/ninjahead.svg"
@@ -38,33 +38,34 @@
       <!-- Container checkout -->
       <main class="content-wrapper-small">
         <!-- Container for items in checkout -->
+        <!-- <div class="content-wrapper-small"> -->
         <h2 class="checkout-title">Varor i korg</h2>
-        <ul class="checkout-list" role="list">
-          <li class="card">
-            <article class="card">
-              <img
-                src="/assets/photographer.png"
-                alt="Fotograf"
-                class="services-img"
-              />
-              <h2 class="product-title">Fotograf</h2>
-              <button class="cta-btn">Ta bort från varukorgen</button>
-            </article>
+        <ul class="checkout-list grid-column-2" role="list">
+          <li class="bg-light text-dark cart-item">
+            <img
+              src="/assets/photographer.png"
+              alt="Fotograf"
+              class="services-img"
+            />
+            <h2 class="product-title">Fotograf</h2>
+            <button class="btn cta-btn padding-small-btn text-bold">
+              Ta bort från varukorgen
+            </button>
           </li>
-          <li>
-            <article class="card">
-              <img
-                src="/assets/pa.png"
-                alt="Personlig tränare"
-                class="services-img"
-              />
-              <h2 class="product-title">Personlig tränare</h2>
-              <button class="cta-btn">Ta bort från varukorgen</button>
-            </article>
+          <li class="bg-light text-dark cart-item">
+            <img
+              src="/assets/pa.png"
+              alt="Personlig tränare"
+              class="services-img"
+            />
+            <h2 class="product-title">Personlig tränare</h2>
+            <button class="btn cta-btn padding-small-btn text-bold">
+              Ta bort från varukorgen
+            </button>
           </li>
         </ul>
-        <table class="pricing-info-table">
-          <thead>
+        <table class="pricing-info-table extra-lineheight">
+          <thead class="bg-blur">
             <tr>
               <td>Vara</td>
               <td>Antal</td>
@@ -84,14 +85,16 @@
             </tr>
           </tbody>
           <tfoot>
-            <tr>
+            <tr class="text-bold">
               <td>Totalt</td>
               <td></td>
               <td>358 sek</td>
             </tr>
           </tfoot>
         </table>
-        <button class="cta-btn">Gimmie Gimmie Gimmie</button>
+        <button class="btn cta-btn padding-large-btn text-bold mt-3">
+          Gimmie Gimmie Gimmie!
+        </button>
       </main>
       <footer class="bg-secondary padding-large extra-lineheight">
         <div class="content-wrapper-large grid-column-3-auto">
