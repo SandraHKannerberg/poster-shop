@@ -16,4 +16,5 @@ HTML5 and CSS3
 
 # Figma skiss to follow
 ![image](https://github.com/user-attachments/assets/6b323200-6875-4a17-9ea8-8d344c537b05)
-![image](https://github.com/user-attachments/assets/c3860b51-da7e-4c1e-9c51-c05031e23b83)
+![image](https://github.com/user-attachments/assets/d477fb45-9fff-41b1-82f3-167a010d9b33)
+
