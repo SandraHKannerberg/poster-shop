@@ -113,7 +113,7 @@ footer {
 }
 
 .content-wrapper-small {
-  width: min(95%, 70em);
+  width: min(50%, 70em);
   display: grid;
   justify-self: center;
   gap: 2rem;
@@ -366,10 +366,14 @@ table.pricing-info-table {
   color: var(--light-color);
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE CSS */
 @media screen and (max-width: 890px) {
   .grid-container {
     gap: 2rem;
+  }
+
+  .content-wrapper-small {
+    width: min(90%, 70em);
   }
 
   .grid-column-3 {

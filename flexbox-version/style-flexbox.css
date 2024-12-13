@@ -31,6 +31,7 @@ ul[role="list"] {
   --secondary-color: rgb(58, 57, 57);
   --accent-color: #3de07e;
   --light-color: #fff;
+  --cta-color: red;
 
   /* Font */
   --font-size-xl: 4rem;
@@ -47,7 +48,6 @@ ul[role="list"] {
   --large-space: 3rem;
   --small-space: 1rem;
   --medium-space: 1.5rem;
-  /* --row: 1.75rem; */
 
   /* Width, Height */
   --width-base: 75vw;
@@ -58,22 +58,25 @@ ul[role="list"] {
   --btn-p-small: 0.6rem;
   --btn-p-large: 0.8rem;
   --btn-border-radius: 0.3rem;
-  --cta-color: red;
   --font-size-btn: 0.95rem;
 }
 
 body {
-  max-width: 100vw;
+  width: 100vw;
   background-color: var(--primary-color);
   color: var(--light-color);
   line-height: var(--line-height);
   font-family: var(--font-family);
   font-style: var(--font-style);
   font-weight: var(--font-weight-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
   min-height: 25rem;
+  width: 100vw;
   background-color: var(--accent-color);
   color: var(--primary-color);
   display: flex;
@@ -115,7 +118,6 @@ header {
 
 /* Container for both products and services */
 main {
-  margin: auto;
   width: var(--container-width);
 }
 
@@ -124,8 +126,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--standard-space);
-  margin-top: var(--large-space);
-  margin-bottom: var(--large-space);
+  margin-block: var(--large-space);
 }
 
 .product-card {
@@ -175,6 +176,7 @@ main {
 
 footer {
   min-height: 15rem;
+  width: 100vw;
   background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
@@ -271,5 +273,47 @@ main.checkout {
     > * + * {
       padding-inline: var(--small-space);
     }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  main.checkout {
+    max-width: 90vw;
+    margin-top: var(--large-space);
+    margin-bottom: var(--large-space);
+  }
+
+  .checkout-list {
+    flex-direction: column;
+    margin-bottom: var(--large-space);
+
+    .card {
+      max-width: calc((40% * var(--standard-space)));
+    }
+  }
+
+  .product-card {
+    width: calc(((var(--width-base)) - 2 * var(--small-space)) / 2);
+  }
+
+  .service-card {
+    width: calc(((var(--width-base)) - 2 * var(--small-space)) / 2);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .product-card {
+    width: calc(((var(--width-base)) * var(--small-space)) / 1);
+  }
+
+  .service-card {
+    width: calc(((var(--width-base)) * var(--small-space)) / 1);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer > .container {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
