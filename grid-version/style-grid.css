@@ -109,13 +109,14 @@ footer {
 .content-wrapper-large {
   display: grid;
   justify-self: center;
-  width: min(95vw, 80vw);
+  width: min(95%, 70em);
 }
 
 .content-wrapper-small {
+  width: min(95%, 70em);
   display: grid;
   justify-self: center;
-  width: min(95vw, 80vw);
+  gap: 2rem;
 }
 
 /* COMPONENTS */
@@ -192,6 +193,7 @@ nav:has(img) {
 table.pricing-info-table {
   border-collapse: collapse;
   width: auto;
+  font-size: 1.2rem;
 
   tfoot > tr > td {
     border-top: 3px solid var(--light-color);
@@ -267,10 +269,6 @@ table.pricing-info-table {
   margin-inline: auto;
 }
 
-.margin-right-0 {
-  margin-right: 0;
-}
-
 .padding-large {
   padding: var(--large-space);
 }
@@ -291,16 +289,12 @@ table.pricing-info-table {
   padding-bottom: 0;
 }
 
-.mt-3 {
+.margin-top-3 {
   margin-top: 3rem;
 }
 
 .margin-top-5 {
   margin-top: 5rem;
-}
-
-.gap-inline {
-  gap: 1rem;
 }
 
 /* COLORS  */
@@ -374,6 +368,10 @@ table.pricing-info-table {
 
 /* RESPONSIVE */
 @media screen and (max-width: 890px) {
+  .grid-container {
+    gap: 2rem;
+  }
+
   .grid-column-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
