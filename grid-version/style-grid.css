@@ -143,13 +143,14 @@ nav:has(img) {
 
 .product-card {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
   gap: 1rem;
 }
 
 .product-card.service {
-  gap: 2rem;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
 
   > * + * {
     padding-inline: var(--small-space);
@@ -163,8 +164,8 @@ nav:has(img) {
 
 .cart-item {
   display: grid;
-  grid-template-rows: 1fr auto auto;
-  grid-template-columns: 1fr;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
   gap: 1rem;
 
   > * + * {
@@ -221,7 +222,9 @@ table.pricing-info-table {
 
 .grid-column-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto;
   justify-content: space-between;
   gap: 2rem;
 }
@@ -234,7 +237,8 @@ table.pricing-info-table {
 
 .grid-column-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto 1fr auto;
   justify-content: space-between;
   gap: 2rem;
 }
