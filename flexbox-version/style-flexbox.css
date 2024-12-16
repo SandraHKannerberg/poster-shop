@@ -124,6 +124,7 @@ main {
 .productlist {
   display: flex;
   flex-wrap: wrap;
+  /* flex: 1; FRÅGA OM DENNA */
   justify-content: space-between;
   gap: var(--standard-space);
   margin-block: var(--large-space);
@@ -272,6 +273,10 @@ main.checkout {
 
     > * + * {
       padding-inline: var(--small-space);
+    }
+
+    .cta-btn {
+      align-self: start;
     }
   }
 }
